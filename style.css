@@ -161,7 +161,7 @@ header h1 {
 
 
 /* 🟦 SZOLGÁLTATÁS KÁRTYÁK */
-.cards {
+..cards {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -171,12 +171,26 @@ header h1 {
   align-items: center;
 }
 
+/* Gépen vízszintesen, egyformán nyújtva */
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
 .card {
   background-color: #fff;
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   text-align: center;
+
+  /* 🔧 Ez kell a magassághoz */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card h3 {
