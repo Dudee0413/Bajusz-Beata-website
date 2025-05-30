@@ -184,8 +184,6 @@ header h1 {
   justify-content: space-between;
 
   width: 100%;
-  max-width: 280px;
-  height: 100%;
   box-sizing: border-box;
 }
 
@@ -211,7 +209,7 @@ header h1 {
 
   .card {
     flex: 1;
-    max-width: unset; /* 💡 Mert flex:1 már elég a méretezéshez */
+    max-width: unset; /* 💡 Mert flex: 1 már elég a méretezéshez */
   }
 
   .about-profile {
@@ -223,6 +221,7 @@ header h1 {
     margin-right: 2rem;
   }
 }
+
 
 
 
