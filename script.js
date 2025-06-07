@@ -1,19 +1,27 @@
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    if (menu) {
-      menu.classList.toggle('active');
-    }
+const track = document.querySelector('.gallery-track');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentIndex = 0;
+
+function updateGallery() {
+  const slideWidth = track.clientWidth;
+  track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+nextButton.addEventListener('click', () => {
+  const totalSlides = track.children.length;
+  if (currentIndex < totalSlides - 1) {
+    currentIndex++;
+    updateGallery();
   }
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    // Menü gombra kattintásra nyit/zár
-    document.querySelector('.menu-toggle')?.addEventListener('click', toggleMenu);
-  
-    // Menüpontra kattintás után zárjon be
-    document.querySelectorAll('.menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        document.querySelector('.menu')?.classList.remove('active');
-      });
-    });
-  });
-  
+});
+
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateGallery();
+  }
+});
+
+window.addEventListener('resize', updateGallery);

@@ -28,7 +28,7 @@ header {
 
 header h1 {
   font-size: 1.5rem;
-  color: #5a3e36;
+  color: #4b105a;
 }
 
 /* ☰ HAMBURGER MENÜ IKON */
@@ -293,4 +293,49 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.gallery {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.gallery-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 1rem;
+}
+
+.gallery-track img {
+  min-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #4d392d;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.gallery .prev { left: 10px; }
+.gallery .next { right: 10px; }
+
+@media (min-width: 768px) {
+  .gallery-track img {
+    min-width: 50%;
+  }
 }
