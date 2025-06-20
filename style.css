@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Georgia', serif;
@@ -321,6 +324,11 @@ footer a:hover {
   border-radius: 1rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 
 
 /* 🖼️ GALÉRIA GOMBOK */
@@ -357,4 +365,106 @@ footer a:hover {
     font-size: 1.5rem;
     padding: 0.3rem 0.7rem;
   }
+}
+
+.adat-header {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.adat-header h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #4d392d;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #4a7c59;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #3c674a;
+}
+.book-section {
+  padding: 40px 20px;
+  background-color: #f9f6f3;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Georgia", serif;
+  line-height: 1.7;
+}
+
+.book-section h2, .book-section h3 {
+  text-align: center;
+  color: #663366;
+}
+
+.book-section p {
+  margin-bottom: 1.4em;
+  text-align: justify;
+}
+/* 🐾 MR. MICI MINI SZEKCIÓ */
+.mici-preview {
+  background-color: #fefaf6;
+  padding: 4rem 1rem;
+  text-align: center;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.mici-box {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mici-preview h2 {
+  font-size: 1.8rem;
+  color: #5a3e36;
+  margin-bottom: 1rem;
+}
+
+.mici-preview p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.btn-mici {
+  background-color: #5a3e36;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-mici:hover {
+  background-color: #7c5548;
+}
+
+
+.service-intro {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 3rem auto 1rem;
+  color: #4b3f3a;
+  padding: 0 1rem;
+  line-height: 1.8;
+  background: none;
+  border: none;
 }
