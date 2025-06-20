@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: Georgia, serif;
+      font-family: "Georgia", serif;
       background-color: #fefaf5;
       color: #2d1e1e;
       margin: 0;
@@ -22,27 +22,7 @@
       justify-content: space-between;
       align-items: center;
     }
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    h1, h2 {
-      color: #5a2c4d;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    h2 {
-      font-size: 1.6rem;
-      margin-top: 2rem;
-    }
-    p {
-      margin-bottom: 1rem;
-      text-align: justify;
-    }
-    a.button-back {
+    header a {
       background-color: #5a2c4d;
       color: white;
       padding: 0.5rem 1rem;
@@ -50,18 +30,53 @@
       border-radius: 5px;
       font-size: 0.9rem;
     }
-    a.button-back:hover {
+    header a:hover {
       background-color: #40213a;
     }
-    .signature {
-      margin-top: 3rem;
-      font-style: italic;
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #5a2c4d;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #7a3c55;
+      border-bottom: 1px solid #e6d4cc;
+      padding-bottom: 0.5rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    .email-link {
+      display: inline-block;
+      margin-top: 2rem;
+      background-color: #5a2c4d;
+      color: white;
+      text-decoration: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .email-link:hover {
+      background-color: #3d1e30;
     }
   </style>
 </head>
 <body>
+  <header>
+    <a href="index.html">← Vissza a főoldalra</a>
+  </header>
+
   <div class="container">
-    <a href="index.html" class="back-button">← Vissza a főoldalra</a>
     <h1>Mr. Mici – A világutazó macska kalandjai</h1>
 
     <p><strong>Beáta Bajusz:</strong> Mr. Mici a világutazó macska kalandjai – Égig érő fák alatt</p>
@@ -83,9 +98,10 @@
     <p>Az ember egyéni és ezáltal a család testi-lelki-szellemi azaz holisztikus evolúciójáról írok. Az Égi Törvényeket, valamint az Ember és Teremtett világ csodálatos szimbiózisát jelenítem meg.</p>
 
     <h2>Fülszöveg</h2>
-    <p>Mr. Mici a legnagyobb káosz és megtévesztések kellős közepén létreálmodott édenkertben találja magát, a szerelem terében...</p>
-    <p>Az édenkertben megérti és megéli az égi rendet... Csak az létezik számunkra, ami bennünk van. Teljesen világos, hogy minden más illuzionált hiábavalóság...</p>
-    <p>Felfedezi lelkének szerényen suttogó hangját... Miután megérintette lényének elsődleges, magasabb szintű síkját, kézzel foghatóvá válik számára létezésének mivolta...</p>
+    <p>Mr. Mici a legnagyobb káosz és megtévesztések kellős közepén létreálmodott édenkertben találja magát, a szerelem terében. A kert rendeltetése a létezés örök körforgásának kiáradásából fakad. Minden sejtje a teremtőket, ezáltal egyéni és együttes fejlődésük útját tükrözi. Az égig érő fák alatti varázslat megtapasztalása teljesen új távlatokat nyit Mr. Mici számára önnön lényének felfedezésében, valamint a földi élet értelmezésében.</p>
+    <p>Az édenkertben megérti és megéli az égi rendet, miszerint mindenki a maga valóságának kovácsa. Csak az létezik számunkra, ami bennünk van. Teljesen világos, hogy minden más illuzionált hiábavalóság.</p>
+    <p>Felfedezi lelkének szerényen suttogó hangját, ezáltal megérti, benne van a minden, s a mindenek bölcsessége által kezében tartja a felülemelkedés kulcsát.</p>
+    <p>Miután megérintette lényének elsődleges, magasabb szintű síkját, kézzel foghatóvá válik számára létezésének mivolta...</p>
 
     <h2>Megszületés és küldetés</h2>
     <p>Mr. Mici születése: Teremtői Istenhozzád az “Ébredéshez”</p>
@@ -93,11 +109,15 @@
     <p>Amikor rájössz arra, hogy mekkora hazugságban éltél... mindenkin magán múlik, hogy melyik zsebébe rakja. A kert mindenki előtt nyitva áll, aki úgy dönt, készen áll, hogy belépjen.</p>
 
     <h2>Megrendelés</h2>
-    <p><strong>Mr. Mici megrendelhető:</strong> <a href="mailto:bbajusz74@gmail.com">bbajusz74@gmail.com</a> vagy <a href="https://m.me/bajusz.bea" target="_blank">Messenger</a> üzenetben.</p>
+    <p><strong>Mr. Mici megrendelhető:</strong>
+      <a href="mailto:bbajusz74@gmail.com">bbajusz74@gmail.com</a> vagy
+      <a href="https://www.facebook.com/beata.bajusz.5" target="_blank">Messenger</a> üzenetben.
+    </p>
 
-    <p>Szeretettel:<br>Beáta Bajusz</p>
+    <p style="margin-top: 2rem;">Szeretettel:<br>Beáta Bajusz</p>
 
     <a href="mailto:bbajusz74@gmail.com" class="email-link">📧 Megrendelés emailben</a>
   </div>
 </body>
 </html>
+
